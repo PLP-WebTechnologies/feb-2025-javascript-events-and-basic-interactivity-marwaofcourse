@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Event Handling Playground</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>JS Event Handling & Interactive Elements Assignment</h1>
+
+    <!-- Button Click -->
+    <button id="colorBtn">Click me to change my color!</button>
+
+    <!-- Hover Effect -->
+    <div id="hoverBox" tabindex="0">Hover or focus me!</div>
+
+    <!-- Keypress Detection -->
+    <input type="text" id="keyInput" placeholder="Type something here..." />
+
+    <!-- Double-click bonus -->
+    <button id="secretBtn">Double-click me for a secret!</button>
+    <p id="secretMsg" style="display:none;">✨ You found the secret! ✨</p>
+
+    <!-- Image Gallery / Slideshow -->
+    <div id="gallery">
+        <img src="https://via.placeholder.com/300x200?text=Slide+1" alt="Slide 1" class="slide active" />
+        <img src="https://via.placeholder.com/300x200?text=Slide+2" alt="Slide 2" class="slide" />
+        <img src="https://via.placeholder.com/300x200?text=Slide+3" alt="Slide 3" class="slide" />
+        <button id="prevSlide">Prev</button>
+        <button id="nextSlide">Next</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+        <button class="tab-btn" data-tab="tab3">Tab 3</button>
+
+        <div id="tab1" class="tab-content active">
+            <p>This is content for Tab 1.</p>
+        </div>
+        <div id="tab2" class="tab-content">
+            <p>This is content for Tab 2.</p>
+        </div>
+        <div id="tab3" class="tab-content">
+            <p>This is content for Tab 3.</p>
+        </div>
+    </div>
+
+    <!-- Form Validation -->
+    <form id="signupForm" novalidate>
+        <h2>Sign Up Form</h2>
+        <label>
+            Email:
+            <input type="email" id="email" required placeholder="email@example.com" />
+            <span class="error" id="emailError"></span>
+        </label>
+        <br />
+        <label>
+            Password:
+            <input type="password" id="password" required placeholder="At least 8 chars" />
+            <span class="error" id="passwordError"></span>
+        </label>
+        <br />
+        <button type="submit">Submit</button>
+        <p id="formMsg"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
